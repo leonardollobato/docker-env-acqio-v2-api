@@ -5,8 +5,9 @@ MAINTAINER Dan Pupius <dan@pupi.us>, Leonardo Lobato <leonardolobato@gmail.com>
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     apache2 php7.0 php7.0-mysql libapache2-mod-php7.0 curl lynx-cur \
     && apt-get install vim -y \
-    && apt-get install php7.0-mbstring \
-    && apt-get install php-xml
+    && apt-get install php7.0-mbstring -y \
+    && apt-get install php-xml -y \
+    && apt-get install php7.0-gd -y
 # Enable apache mods.
 RUN a2enmod php7.0
 RUN a2enmod rewrite

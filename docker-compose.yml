@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web_apache:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - /Users/leonardollobato/Projects/Foccus:/var/www/site
+    depends_on:
+      - mysql_test
+  mysql_test:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    # command:
+    #   RUN /bin/bash -c "/usr/bin/mysqld_safe &" && \
+    #   sleep 5 && \
+    #   mysql -u root -proot -e "CREATE DATABASE acqiodev_payment" && \
+    #   mysql -u root -proot mydb < acqiopay_dev.sql
