@@ -15,11 +15,11 @@ EXPOSE 3306
 WORKDIR ~/
 
 ADD data /var/lib/mysql
-COPY *.sql /tmp/
-ADD import_db.sh /tmp/import_db.sh
+# COPY *.sql /tmp/
+# ADD import_db.sh /tmp/import_db.sh
 
-RUN chmod -R 777 /tmp/*.sql
-RUN chmod -R 777 /tmp/import_db.sh
+# RUN chmod -R 777 /tmp/*.sql
+# RUN chmod -R 777 /tmp/import_db.sh
 RUN chmod -R 755 /var/lib/mysql/
 
 
