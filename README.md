@@ -1,3 +1,10 @@
+#Thing's got better !!
+## clone this directory, go inside it and run:
+> docker-compose up --build -d
+
+
+# from this line above is what the old people call legacy
+
 # Initial Build
 > docker build -t **CONTAINER_NAME** . 
 
