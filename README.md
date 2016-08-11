@@ -2,6 +2,10 @@
 ## clone this directory, change the enviroment variables as you wish, go inside it and run:
 > docker-compose up --build -d
 
+##comming soon...
+- Add Composer installation
+- PHPMyAdmin
+
 ##### from this line above is what the old people call legacy
 
 # Initial Build
