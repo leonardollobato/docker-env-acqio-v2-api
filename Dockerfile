@@ -28,7 +28,7 @@ EXPOSE 80
 
 WORKDIR ~/
 # Copy this repo into place.
-ADD /Users/leonardolobato/Documents/Projects/* /var/www/site
+ADD www /var/www/site
 
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
