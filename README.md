@@ -1,8 +1,12 @@
-#Thing's got better !!
+# Thing's got better !!
+
 ## clone this directory, change the enviroment variables as you wish, go inside it and run:
+
+### before execute the command below, go to mysql folder and create a folder named 'data'. eg. mysql/data
+
 > docker-compose up --build -d
 
-##comming soon...
+## comming soon...
 - Add Composer installation
 - PHPMyAdmin
 
@@ -19,7 +23,7 @@
 
 apachectl start 
 
-### wanna mount a host volume? no problem
+### wanna mount a host volume? no problem.
 > docker run -p 8080:80 -d -v /Users/dan/site:/var/www/site mysite 
 
 # Want to link to another container, follow the instruction below!

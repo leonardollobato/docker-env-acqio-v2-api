@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /Users/leonardollobato/Projects/Foccus:/var/www/site
+      - /Users/leonardolobato/Documents/Projects:/var/www/site
     depends_on:
       - mysql_test
   mysql_test:
